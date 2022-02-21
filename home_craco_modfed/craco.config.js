@@ -1,6 +1,8 @@
+cracoModuleFederation = require("craco-module-federation");
+
 module.exports = {
   output: {
-    publicPath: "http://localhost:3020/",
+    publicPath: "http://localhost:3000/",
   },
 
   resolve: {
@@ -8,7 +10,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 3020,
+    port: 3000,
     historyApiFallback: true,
   },
 
@@ -34,4 +36,11 @@ module.exports = {
       },
     ],
   },
+
+  plugins: [
+    {
+      plugin: cracoModuleFederation,
+      options: { useNamedChunkIds: true }, //THIS LINE IS OPTIONAL
+    },
+  ],
 };
