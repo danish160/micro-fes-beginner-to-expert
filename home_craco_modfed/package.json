@@ -13,6 +13,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "remixicon": "^2.5.0",
+    "sass": "^1.49.8",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
@@ -43,6 +45,9 @@
     ]
   },
   "devDependencies": {
-    "craco-module-federation": "^1.1.0"
+    "craco-module-federation": "^1.1.0",
+    "postcss": "^8.4.6",
+    "postcss-loader": "^6.2.1",
+    "tailwindcss": "^2.0.2"
   }
 }
