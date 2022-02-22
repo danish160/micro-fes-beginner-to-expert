@@ -1,20 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.scss";
+import ReactDOM from "react-dom";
 
-function App() {
-  return (
-    <div className="p-5 bg-blue-500 text-white text-3xl font-bold">
-      <div className="flex">
-        <div className="flex-grow flex">
-          <a>Fidget Spinner World</a>
-          <div className="mx-5">|</div>
-          <a id="cart">Cart</a>
-        </div>
-        <div className="flex-end relative"></div>
-      </div>
-    </div>
-  );
-}
+import "remixicon/fonts/remixicon.css";
+import "./index.scss";
 
-export default App;
+import MainLayout from "home/MainLayout";
+
+ReactDOM.render(<MainLayout />, document.getElementById("root"));
