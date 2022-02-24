@@ -5,9 +5,9 @@ module.exports = {
   name: "home",
   filename: "remoteEntry.js",
   remotes: {
-    home: "home@http://localhost:3000/remoteEntry.js",
-    pdp: "pdp@http://localhost:3001/remoteEntry.js",
-    cart: "cart@http://localhost:3002/remoteEntry.js",
+    home: process.env.SRC_home,
+    pdp: process.env.SRC_pdp,
+    cart: process.env.SRC_cart,
   },
   exposes: {
     "./Header": "./src/Header.tsx",
